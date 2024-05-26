@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap');
+
+html, body {
+  font-family: 'Montserrat';
+  background-color: #263A29;
+}
+
+.text-secondary {
+  color: #F2E3DB !important;
+}
+
+nav {
+  border-bottom: 1px solid #F2E3DB;
+  background-color: #263A29;
+}
+
+.nav-item, .nav-link {
+  font-weight: 600;
+  font-size: small;
+  color: rgba(242, 227, 219, 0.6) !important; 
+  transition: opacity 0.3s, color 0.3s;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+  color: rgba(242, 227, 219, 1) !important; 
+}
+
+.navbar-brand, .navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus {
+  font-weight: 600;
+  color: #F2E3DB;
+  font-family: 'Reddit Mono';
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  --bs-navbar-toggler-icon-bg: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHZpZXdCb3g9IjAgMCA0NCA0NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDEzSDM0TTEwIDIySDM0TTEwIDMxSDM0IiBzdHJva2U9IiNGMkUzREIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=') !important;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+#title {
+  color: #E86A33;
+  font-weight: 600;
+}
+
+#map { 
+  height: 350px; 
+}
+
+#add {
+  background-color: #F2E3DB;
+  color: #263A29;
+}
+
+.form-label {
+  font-weight: 600;
+}
