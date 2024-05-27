@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap');
 
 html, body {
+  height: 100vh;
   font-family: 'Montserrat';
   background-color: #263A29;
 }
@@ -21,7 +22,7 @@ nav {
   transition: opacity 0.3s, color 0.3s;
 }
 
-.nav-link:hover, .nav-link:focus, .nav-link:active {
+.nav-link:hover, .nav-link:focus, .nav-link.active {
   color: rgba(242, 227, 219, 1) !important; 
 }
 
@@ -47,7 +48,7 @@ nav {
 }
 
 #map { 
-  height: 350px; 
+  height: 320px; 
 }
 
 #add {
@@ -57,4 +58,17 @@ nav {
 
 .form-label {
   font-weight: 600;
+}
+
+footer {
+  background-color: #99B080;
+  font-weight: 500;
+  color: #263A29;
+  font-size: small;
+}
+
+footer > p > a {
+  color: #263A29;
+  font-weight: 600;
+  text-decoration: none;
 }
