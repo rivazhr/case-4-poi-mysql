@@ -87,8 +87,7 @@ $(() => {
     const markers = data.trim().split("\n");
     markers.forEach((marker) => {
       const [lat, lng, location, description] = marker.split(",");
-      if (lat && lng && location && description)
-        addMarker(lat, lng, location, description);
+      addMarker(lat, lng, location, description);
     });
   }).fail((error) => console.error("Error saving marker:", error));
 
@@ -103,7 +102,7 @@ $(() => {
     $("#addModal input[name='lng']").val(lng);
     $("#addModal input[name='lat']").val(lat);
 
-    $("#addModal").on("submit", "form", function (e) {
+    $("#addModal").off("submit").on("submit", "form", function (e) {
       e.preventDefault();
       let loc = $("#addModal input[name='loc']").val();
       let desc = $("#addModal textarea[name='desc']").val();
@@ -120,6 +119,7 @@ $(() => {
         .fail((error) => console.error("Error saving marker:", error));
 
       addModal.hide();
+      $(this)[0].reset();
     });
   });
 });
